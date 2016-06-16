@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="455.0" prefWidth="679.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controller.Tab.Medicineshowcontroller">
+   <children>
+      <TableView fx:id="tv1" layoutX="130.0" layoutY="39.0" prefHeight="240.0" prefWidth="527.0">
+        <columns>
+          <TableColumn fx:id="c1" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="c2" prefWidth="75.0" text="Quantity" />
+          <TableColumn fx:id="c3" prefWidth="75.0" text="Price" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TextField fx:id="tfMedicine" layoutX="183.0" layoutY="327.0" prefHeight="25.0" prefWidth="143.0" />
+      <Label layoutX="108.0" layoutY="326.0" prefHeight="27.0" prefWidth="52.0" text="Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="108.0" layoutY="378.0" prefHeight="25.0" prefWidth="67.0" text="Quantity">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfQuantity" layoutX="183.0" layoutY="379.0" prefHeight="25.0" prefWidth="143.0" />
+      <Label layoutX="422.0" layoutY="327.0" prefHeight="26.0" prefWidth="67.0" text="Price">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfPrice" layoutX="489.0" layoutY="328.0" />
+      <Button fx:id="btAdd" layoutX="508.0" layoutY="375.0" mnemonicParsing="false" onAction="#handleAddButton" prefHeight="33.0" prefWidth="111.0" text="ADD" />
+   </children>
+</AnchorPane>

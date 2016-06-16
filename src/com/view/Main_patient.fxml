@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="679.0" prefWidth="745.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controller.Main_Patient_Controller">
+    <children>
+        <TabPane fx:id="tabPane" layoutX="1.0" layoutY="109.0" prefHeight="570.0" prefWidth="754.0">
+            <tabs>
+                <Tab fx:id="docTab" closable="false" text="Doctor Management">
+                    <content>
+                        <fx:include source="tab/DoctorTab.fxml" />
+                    </content>
+                </Tab>               
+                <Tab fx:id="userTab" closable="false" text="Appointment Management">
+                    <content>
+                        <fx:include source="tab/UserTab.fxml" />
+                    </content>
+                </Tab>
+                <Tab fx:id="medicines" closable="false" text="Medicine">
+                    <content>
+                        <fx:include source="tab/Medicine.fxml" />
+                    </content>
+                </Tab>                
+            </tabs>
+        </TabPane>
+      <ImageView fitHeight="111.0" fitWidth="762.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../AHD_website_logo_2015.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

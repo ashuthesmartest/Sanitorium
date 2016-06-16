@@ -1,0 +1,5 @@
+﻿- Assignment sử dụng Derby Database Embedded. Database dựng sẵn, nhúng vào vào app, kết nối không username và pass, không cần cài thêm, tự connect.
+- Library ở trong thu mục lib
+- Database có 2 user level. User phải có DoctorID tuong ứng. Kết nối bằng tài khoản admin/admin (level 1) mới xuất hiện tab User Management.
+- Tab Patient Management có 2 view mode là View All và My Patient. Người dùng chỉ được chỉnh sửa "My Patient"
+My Patient tự lọc theo DoctorID của nguời dùng đang dăng nhập vào hệ thống.
